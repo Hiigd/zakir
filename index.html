@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحديد الاختبار النهائي لمادة الكيمياء</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-flask-vial"></i>
+                </div>
+                <h1>تحديد الاختبار النهائي لمادة الكيمياء</h1>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-switch">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <div class="stats-card">
+                <div class="stat">
+                    <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="stat-info">
+                        <h3 id="completed-count">0</h3>
+                        <p>تم الانتهاء</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon"><i class="fas fa-list-check"></i></div>
+                    <div class="stat-info">
+                        <h3 id="total-count">28</h3>
+                        <p>إجمالي الأسئلة</p>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-info">
+                        <h3 id="remaining-count">28</h3>
+                        <p>متبقي</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="ابحث عن رقم السؤال...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <nav class="tabs-container">
+            <button class="tab-btn active" data-tab="multiple-choice">
+                <i class="fas fa-list-ul"></i>
+                <span>الأسئلة الاختيارية</span>
+            </button>
+            <button class="tab-btn" data-tab="essay">
+                <i class="fas fa-pen-fancy"></i>
+                <span>الأسئلة المقالية</span>
+            </button>
+            <button class="tab-btn" data-tab="all">
+                <i class="fas fa-th-large"></i>
+                <span>جميع الأسئلة</span>
+            </button>
+            <button class="tab-btn" data-tab="gallery">
+                <i class="fas fa-images"></i>
+                <span>معرض الصور</span>
+            </button>
+        </nav>
+
+        <main>
+            <div class="tab-content active" id="multiple-choice">
+                <h2>الأسئلة الاختيارية</h2>
+                <div class="questions-grid">
+                    <!-- سيتم إضافة الأسئلة الاختيارية هنا بواسطة JavaScript -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="essay">
+                <h2>الأسئلة المقالية</h2>
+                <div class="questions-list">
+                    <!-- سيتم إضافة الأسئلة المقالية هنا بواسطة JavaScript -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="all">
+                <h2>جميع الأسئلة</h2>
+                <div class="questions-combined">
+                    <!-- سيتم إضافة جميع الأسئلة هنا بواسطة JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="gallery">
+                <h2>معرض الصور</h2>
+                <div class="gallery-container">
+                    <!-- سيتم إضافة معرض الصور هنا بواسطة JavaScript -->
+                </div>
+            </div>
+
+            <div class="question-modal" id="question-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modal-title">عنوان السؤال</h3>
+                        <span class="close-modal">&times;</span>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <!-- محتوى السؤال سيظهر هنا -->
+                    </div>
+                    <div class="modal-footer">
+                        <button id="prev-question" class="nav-btn"><i class="fas fa-arrow-right"></i> السؤال السابق</button>
+                        <div class="completion-toggle">
+                            <label class="toggle-container">
+                                <input type="checkbox" id="completion-checkbox">
+                                <span class="toggle-checkmark"></span>
+                                تم الانتهاء من هذا السؤال
+                            </label>
+                        </div>
+                        <button id="next-question" class="nav-btn">السؤال التالي <i class="fas fa-arrow-left"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lightbox" id="lightbox">
+                <span class="close-lightbox">&times;</span>
+                <div class="lightbox-content">
+                    <img id="lightbox-image" src="" alt="صورة مكبرة">
+                </div>
+                <button class="lightbox-nav prev-img"><i class="fas fa-chevron-right"></i></button>
+                <button class="lightbox-nav next-img"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="progress-container">
+                <div class="progress-text">تقدم المذاكرة: <span id="progress-percentage">0%</span></div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress-bar-fill"></div>
+                </div>
+            </div>
+            <p>تم إنشاء هذه الصفحة لمساعدتك في المذاكرة للاختبار النهائي لمادة الكيمياء</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
