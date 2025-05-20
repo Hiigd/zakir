@@ -1,38 +1,38 @@
-// بيانات الأسئلة مع الصور
 const questionData = {
     multipleChoice: [
-        { id: 1, number: 1, title: "سؤال رقم 1", content: "<img src='images/IMG-20250520-WA0083.jpg' class='question-image' alt='سؤال رقم 1'>", completed: false },
-        { id: 2, number: 3, title: "سؤال رقم 3", content: "<img src='images/IMG-20250520-WA0084.jpg' class='question-image' alt='سؤال رقم 3'>", completed: false },
-        { id: 3, number: 4, title: "سؤال رقم 4", content: "<img src='images/IMG-20250520-WA0085.jpg' class='question-image' alt='سؤال رقم 4'>", completed: false },
-        { id: 4, number: 6, title: "سؤال رقم 6", content: "<img src='images/IMG-20250520-WA0086.jpg' class='question-image' alt='سؤال رقم 6'>", completed: false },
-        { id: 5, number: 7, title: "سؤال رقم 7", content: "<img src='images/IMG-20250520-WA0087.jpg' class='question-image' alt='سؤال رقم 7'>", completed: false },
-        { id: 6, number: 10, title: "سؤال رقم 10", content: "<img src='images/IMG-20250520-WA0088.jpg' class='question-image' alt='سؤال رقم 10'>", completed: false },
-        { id: 7, number: 14, title: "سؤال رقم 14", content: "<img src='images/IMG-20250520-WA0089.jpg' class='question-image' alt='سؤال رقم 14'>", completed: false },
-        { id: 8, number: 17, title: "سؤال رقم 17", content: "<img src='images/IMG-20250520-WA0090.jpg' class='question-image' alt='سؤال رقم 17'>", completed: false },
-        { id: 9, number: 20, title: "سؤال رقم 20", content: "<img src='images/IMG-20250520-WA0092.jpg' class='question-image' alt='سؤال رقم 20'>", completed: false },
-        { id: 10, number: 22, title: "سؤال رقم 22", content: "<img src='images/IMG-20250520-WA0093.jpg' class='question-image' alt='سؤال رقم 22'>", completed: false },
-        { id: 11, number: 23, title: "سؤال رقم 23", content: "<img src='images/IMG-20250520-WA0094.jpg' class='question-image' alt='سؤال رقم 23'>", completed: false },
-        { id: 12, number: 24, title: "سؤال رقم 24", content: "<img src='images/IMG-20250520-WA0095.jpg' class='question-image' alt='سؤال رقم 24'>", completed: false },
-        { id: 13, number: 25, title: "سؤال رقم 25", content: "<img src='images/IMG-20250520-WA0096.jpg' class='question-image' alt='سؤال رقم 25'>", completed: false },
-        { id: 14, number: 28, title: "سؤال رقم 28", content: "<img src='images/IMG-20250520-WA0097.jpg' class='question-image' alt='سؤال رقم 28'>", completed: false },
-        { id: 15, number: 30, title: "سؤال رقم 30", content: "<img src='images/IMG-20250520-WA0098.jpg' class='question-image' alt='سؤال رقم 30'>", completed: false },
-        { id: 16, number: 36, title: "سؤال رقم 36", content: "<img src='images/IMG-20250520-WA0100.jpg' class='question-image' alt='سؤال رقم 36'>", completed: false },
-        { id: 17, number: 37, title: "سؤال رقم 37", content: "<img src='images/IMG-20250520-WA0101.jpg' class='question-image' alt='سؤال رقم 37'>", completed: false },
-        { id: 18, number: 38, title: "سؤال رقم 38", content: "<img src='images/IMG-20250520-WA0102.jpg' class='question-image' alt='سؤال رقم 38'>", completed: false },
-        { id: 19, number: 39, title: "سؤال رقم 39", content: "<img src='images/IMG-20250520-WA0103.jpg' class='question-image' alt='سؤال رقم 39'>", completed: false },
-        { id: 20, number: 40, title: "سؤال رقم 40", content: "<img src='images/IMG-20250520-WA0104.jpg' class='question-image' alt='سؤال رقم 40'>", completed: false },
-        { id: 21, number: 41, title: "سؤال رقم 41", content: "<img src='images/IMG-20250520-WA0105.jpg' class='question-image' alt='سؤال رقم 41'>", completed: false },
-        { id: 22, number: 42, title: "سؤال رقم 42", content: "<img src='images/IMG-20250520-WA0106.jpg' class='question-image' alt='سؤال رقم 42'>", completed: false },
-        { id: 23, number: 43, title: "سؤال رقم 43", content: "<img src='images/IMG-20250520-WA0107.jpg' class='question-image' alt='سؤال رقم 43'>", completed: false },
-        { id: 24, number: 44, title: "سؤال رقم 44", content: "<img src='images/IMG-20250520-WA0108.jpg' class='question-image' alt='سؤال رقم 44'>", completed: false },
-        { id: 25, number: 45, title: "سؤال رقم 45", content: "<img src='images/IMG-20250520-WA0109.jpg' class='question-image' alt='سؤال رقم 45'>", completed: false },
-        { id: 26, number: 48, title: "سؤال رقم 48", content: "<img src='images/IMG-20250520-WA0110.jpg' class='question-image' alt='سؤال رقم 48'>", completed: false }
+        { id: 1, number: 1, title: "سؤال رقم 1", content: "<img src='media/IMG-20250520-WA0083.jpg' class='question-image' alt='سؤال رقم 1'>", completed: false },
+        { id: 2, number: 3, title: "سؤال رقم 3", content: "<img src='media/IMG-20250520-WA0084.jpg' class='question-image' alt='سؤال رقم 3'>", completed: false },
+        { id: 3, number: 4, title: "سؤال رقم 4", content: "<img src='media/IMG-20250520-WA0085.jpg' class='question-image' alt='سؤال رقم 4'>", completed: false },
+        { id: 4, number: 6, title: "سؤال رقم 6", content: "<img src='media/IMG-20250520-WA0086.jpg' class='question-image' alt='سؤال رقم 6'>", completed: false },
+        { id: 5, number: 7, title: "سؤال رقم 7", content: "<img src='media/IMG-20250520-WA0087.jpg' class='question-image' alt='سؤال رقم 7'>", completed: false },
+        { id: 6, number: 10, title: "سؤال رقم 10", content: "<img src='media/IMG-20250520-WA0088.jpg' class='question-image' alt='سؤال رقم 10'>", completed: false },
+        { id: 7, number: 14, title: "سؤال رقم 14", content: "<img src='media/IMG-20250520-WA0089.jpg' class='question-image' alt='سؤال رقم 14'>", completed: false },
+        { id: 8, number: 17, title: "سؤال رقم 17", content: "<img src='media/IMG-20250520-WA0090.jpg' class='question-image' alt='سؤال رقم 17'>", completed: false },
+        { id: 9, number: 20, title: "سؤال رقم 20", content: "<img src='media/IMG-20250520-WA0092.jpg' class='question-image' alt='سؤال رقم 20'>", completed: false },
+        { id: 10, number: 22, title: "سؤال رقم 22", content: "<img src='media/IMG-20250520-WA0093.jpg' class='question-image' alt='سؤال رقم 22'>", completed: false },
+        { id: 11, number: 23, title: "سؤال رقم 23", content: "<img src='media/IMG-20250520-WA0094.jpg' class='question-image' alt='سؤال رقم 23'>", completed: false },
+        { id: 12, number: 24, title: "سؤال رقم 24", content: "<img src='media/IMG-20250520-WA0095.jpg' class='question-image' alt='سؤال رقم 24'>", completed: false },
+        { id: 13, number: 25, title: "سؤال رقم 25", content: "<img src='media/IMG-20250520-WA0096.jpg' class='question-image' alt='سؤال رقم 25'>", completed: false },
+        { id: 14, number: 28, title: "سؤال رقم 28", content: "<img src='media/IMG-20250520-WA0097.jpg' class='question-image' alt='سؤال رقم 28'>", completed: false },
+        { id: 15, number: 30, title: "سؤال رقم 30", content: "<img src='media/IMG-20250520-WA0098.jpg' class='question-image' alt='سؤال رقم 30'>", completed: false },
+        { id: 16, number: 36, title: "سؤال رقم 36", content: "<img src='media/IMG-20250520-WA0100.jpg' class='question-image' alt='سؤال رقم 36'>", completed: false },
+        { id: 17, number: 37, title: "سؤال رقم 37", content: "<img src='media/IMG-20250520-WA0101.jpg' class='question-image' alt='سؤال رقم 37'>", completed: false },
+        { id: 18, number: 38, title: "سؤال رقم 38", content: "<img src='media/IMG-20250520-WA0102.jpg' class='question-image' alt='سؤال رقم 38'>", completed: false },
+        { id: 19, number: 39, title: "سؤال رقم 39", content: "<img src='media/IMG-20250520-WA0103.jpg' class='question-image' alt='سؤال رقم 39'>", completed: false },
+        { id: 20, number: 40, title: "سؤال رقم 40", content: "<img src='media/IMG-20250520-WA0104.jpg' class='question-image' alt='سؤال رقم 40'>", completed: false },
+        { id: 21, number: 41, title: "سؤال رقم 41", content: "<img src='media/IMG-20250520-WA0105.jpg' class='question-image' alt='سؤال رقم 41'>", completed: false },
+        { id: 22, number: 42, title: "سؤال رقم 42", content: "<img src='media/IMG-20250520-WA0106.jpg' class='question-image' alt='سؤال رقم 42'>", completed: false },
+        { id: 23, number: 43, title: "سؤال رقم 43", content: "<img src='media/IMG-20250520-WA0107.jpg' class='question-image' alt='سؤال رقم 43'>", completed: false },
+        { id: 24, number: 44, title: "سؤال رقم 44", content: "<img src='media/IMG-20250520-WA0108.jpg' class='question-image' alt='سؤال رقم 44'>", completed: false },
+        { id: 25, number: 45, title: "سؤال رقم 45", content: "<img src='media/IMG-20250520-WA0109.jpg' class='question-image' alt='سؤال رقم 45'>", completed: false },
+        { id: 26, number: 48, title: "سؤال رقم 48", content: "<img src='media/IMG-20250520-WA0110.jpg' class='question-image' alt='سؤال رقم 48'>", completed: false }
     ],
     essay: [
-        { id: 27, number: 18, title: "سؤال مقالي رقم 18", content: "<img src='images/IMG-20250520-WA0091.jpg' class='question-image' alt='سؤال مقالي رقم 18'>", completed: false },
-        { id: 28, number: 31, title: "سؤال مقالي رقم 31", content: "<img src='images/IMG-20250520-WA0099.jpg' class='question-image' alt='سؤال مقالي رقم 31'>", completed: false }
+        { id: 27, number: 18, title: "سؤال مقالي رقم 18", content: "<img src='media/IMG-20250520-WA0091.jpg' class='question-image' alt='سؤال مقالي رقم 18'>", completed: false },
+        { id: 28, number: 31, title: "سؤال مقالي رقم 31", content: "<img src='media/IMG-20250520-WA0099.jpg' class='question-image' alt='سؤال مقالي رقم 31'>", completed: false }
     ]
 };
+
 
 // إعدادات particles.js
 const particlesConfig = {
